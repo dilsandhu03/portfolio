@@ -8,7 +8,7 @@ $rander = rand(0, 999);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DilSandhu03 - Personal Portfolio</title>
+    <title>Dilawar Singh - Personal Portfolio</title>
     <link rel="shortcut icon" href="./assets/images/favicon2.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -71,7 +71,7 @@ $rander = rand(0, 999);
                             </a>
                         </div>
                         <div class="ds_iconItem px-2 py-1">
-                            <a href="https://www.instagram.com/dilsandhu_03/" class="ds_instagram" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/dilsandhu03/" class="ds_instagram" target="_blank" rel="noopener noreferrer">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -178,7 +178,7 @@ $rander = rand(0, 999);
                                                             </a>
                                                         </div>
                                                         <div class="ds_iconItem px-2">
-                                                            <a href="https://www.instagram.com/dilsandhu_03/" class="ds_instagram" target="_blank" rel="noopener noreferrer">
+                                                            <a href="https://www.instagram.com/dilsandhu03/" class="ds_instagram" target="_blank" rel="noopener noreferrer">
                                                                 <i class="fa-brands fa-instagram"></i>
                                                             </a>
                                                         </div>
@@ -358,9 +358,9 @@ $rander = rand(0, 999);
                         <div class="d-flex flex-row">
                             <div class="ds_extra"></div>
                             <div class="ds_resumeSubMain">
-                                <div class="ds_resumeRes text-center">
+<!--                                 <div class="ds_resumeRes text-center">
                                     <h2>Resume Panding</h2>
-                                </div>
+                                </div> -->
                                 <div class="ds_resumeSkill mt-5 pt-5">
                                     <div class="ds_resume_skillHeader">
                                         <div class="ds_top">
