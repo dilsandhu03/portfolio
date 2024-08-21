@@ -1,0 +1,539 @@
+<!-- <?php
+$rander = rand(0, 999);
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DilSandhu03 - Personal Portfolio</title>
+    <link rel="shortcut icon" href="./assets/images/favicon2.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="./assets/jquery/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/solid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+<!--     <link rel="stylesheet" href="./assets/css/style.css?v=<?php echo $rander; ?>"> -->
+</head>
+
+<body>
+    <div class="ds_root">
+        <div class="ds_home">
+            <div class="ds_header">
+                <div class="ds_navbar">
+                    <div class="ds_navbarItems d-flex flex-row text-white justify-content-center m-0 px-4 py-2">
+                        <div class="ds_navbarItem">
+                            <span class="ds_mouse" data-bs-toggle="modal" data-bs-target="#aboutMePage">About</span>
+                        </div>
+                        <div class="ds_navbarItem">
+                            <span class="ds_mouse" data-bs-toggle="modal" data-bs-target="#resumePage">Resume</span>
+                        </div>
+                        <div class="ds_navbarItem">
+                            <span class="ds_mouse portfolio">Portfolio</span>
+                        </div>
+                        <div class="ds_navbarItem">
+                            <span class="ds_mouse" data-bs-toggle="modal" data-bs-target="#contactMePage">Contact</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ds_main">
+                <div class="ds_mainSection">
+                    <div class="ds_textArea text-center position-absolute">
+                        <div class="ds_name">
+                            <span>Dilawar Singh</span>
+                        </div>
+                        <div class="ds_headline">
+                            <span class="iam">I'm a</span>
+                            <span class="text"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ds_icon">
+                <div class="ds_iconSection position-absolute">
+                    <div class="ds_iconItems p-2 px-0 d-flex">
+                        <div class="ds_iconItem px-2 py-1">
+                            <a href="https://github.com/dilsandhu03" class="ds_githup" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="ds_iconItem px-2 py-1">
+                            <a href="skype:live:.cid.c3c61b7046d60f93?chat" class="ds_skype" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-skype"></i>
+                            </a>
+                        </div>
+                        <div class="ds_iconItem px-2 py-1">
+                            <a href="https://www.instagram.com/dilsandhu_03/" class="ds_instagram" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="ds_iconItem px-2 py-1">
+                            <a href="https://wa.me/+919855672484" class="ds_whatsapp" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <div class="ds_iconItem px-2 py-1">
+                            <a href="https://www.snapchat.com/add/dilsandhu_03" class="ds_snapchat" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-snapchat"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me modal -->
+    <div class="modal fade" id="aboutMePage" tabindex="-1" aria-labelledby="aboutMePageLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-black text-white">
+                <div class="modal-header border-0 align-self-end">
+                    <i class="fa-solid fa-xmark ds_btnClose" data-bs-dismiss="modal" aria-label="Close"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="ds_aboutHeader text-center">
+                        <div class="ds_top">
+                            <span>Get to know me</span>
+                        </div>
+                        <div class="ds_middle">
+                            <span>About Me</span>
+                        </div>
+                        <div class="ds_bottom">
+                            <div class="ds_animatedBar"></div>
+                        </div>
+                    </div>
+                    <div class="ds_aboutMain mt-5">
+                        <div class="ds_aboutSMain d-flex text-center">
+                            <div class="ds_extra"></div>
+                            <div class="ds_image d-flex align-self-center">
+                                <div class="ds_subImage" style="background-image: url(./assets/images/me.jpg);">
+                                </div>
+                            </div>
+                            <div class="ds_aboutText text-start">
+                                <div class="ds_aboutTextSection d-flex flex-column me-4">
+                                    <div class="ds_subText">
+                                        <span>Who am i?</span>
+                                    </div>
+                                    <div class="ds_text pt-2">
+                                        <span>I'm Dilawar Singh, a Web and Android Application Developer</span>
+                                    </div>
+                                    <div class="ds_description pb-4">
+                                        <span>I am a freelancer based in the India and i have been building
+                                            noteworthy UX/UI designs and websites for years, which comply with the
+                                            latest design trends. I help convert a vision and an idea into meaningful
+                                            and useful products. Having a sharp eye for product evolution helps me
+                                            prioritize tasks, iterate fast and deliver faster.</span>
+                                    </div>
+                                    <div class="ds_info pt-4">
+                                        <div class="ds_singleInfo d-flex">
+                                            <div class="ds_infoName pb-3">
+                                                <span>Name:</span>
+                                                <span>Dilawar Singh</span>
+                                            </div>
+                                            <div class="ds_infoEmail pb-3">
+                                                <span>Email:</span>
+                                                <a href="mailto:sdilawarsingh045@gmail.com" target="_blank" rel="noopener noreferrer">sdilawarsingh045@gmail.com</a>
+                                            </div>
+                                        </div>
+                                        <div class="ds_singleInfo d-flex">
+                                            <div class="ds_infoAge pb-3">
+                                                <span>Whatsapp:</span>
+                                                <a href="https://wa.me/+919855672484" target="_blank" rel="noopener noreferrer">
+                                                    +919855672484
+                                                </a>
+                                            </div>
+                                            <div class="ds_infoFrom pb-3">
+                                                <span>From:</span>
+                                                <span>Dharamkot, Punjab, India</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ds_otherInfo">
+                                        <div class="ds_otherItems d-flex">
+                                            <div class="ds_cv me-4 mb-3">
+                                                <a href="./assets/images/resume.png" download="Dilawar Singh's Resume" class="btn" rel="noopener noreferrer">Download CV</a>
+                                            </div>
+                                            <div class="d-flex flex-row align-items-center mb-3">
+                                                <div class="ds_otherLine">
+                                                    <span></span>
+                                                </div>
+                                                <div class="ds_otherIcon">
+                                                    <div class="ds_iconItems d-flex flex-row p-2">
+                                                        <div class="ds_iconItem px-2">
+                                                            <a href="https://github.com/dilsandhu03" class="ds_githup" target="_blank" rel="noopener noreferrer">
+                                                                <i class="fa-brands fa-github"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ds_iconItem px-2">
+                                                            <a href="skype:live:.cid.c3c61b7046d60f93?chat" class="ds_skype" target="_blank" rel="noopener noreferrer">
+                                                                <i class="fa-brands fa-skype"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ds_iconItem px-2">
+                                                            <a href="https://www.instagram.com/dilsandhu_03/" class="ds_instagram" target="_blank" rel="noopener noreferrer">
+                                                                <i class="fa-brands fa-instagram"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ds_iconItem px-2">
+                                                            <a href="https://wa.me/+919855672484" class="ds_whatsapp" target="_blank" rel="noopener noreferrer">
+                                                                <i class="fa-brands fa-whatsapp"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ds_iconItem px-2">
+                                                            <a href="https://www.snapchat.com/add/dilsandhu_03" class="ds_snapchat" target="_blank" rel="noopener noreferrer">
+                                                                <i class="fa-brands fa-snapchat"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ds_extra"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Me modal -->
+    <div class="modal fade" id="contactMePage" tabindex="-1" aria-labelledby="contactMePageLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-black text-white">
+                <div class="modal-header border-0 align-self-end">
+                    <i class="fa-solid fa-xmark ds_btnClose" data-bs-dismiss="modal" aria-label="Close"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="ds_aboutHeader text-center">
+                        <div class="ds_top">
+                            <span>Feel free to contact me anytimes</span>
+                        </div>
+                        <div class="ds_middle">
+                            <span>Get in Touch</span>
+                        </div>
+                        <div class="ds_bottom">
+                            <div class="ds_animatedBar"></div>
+                        </div>
+                    </div>
+                    <div class="ds_aboutMain mt-5 pt-5">
+                        <div class="ds_aboutSMain d-flex text-center">
+                            <div class="ds_extra"></div>
+                            <div class="ds_contactForm d-flex flex-column align-items-center mb-5">
+                                <form action="mailto:sdilawarsingh045@gmail.com" method="post" enctype="text/plain">
+                                    <div class="ds_contactTitle text-start mb-3">
+                                        <h4>Message Me</h4>
+                                    </div>
+                                    <div class="ds_formSection">
+                                        <div class="ds_topForm d-flex flex-row mb-4">
+                                            <input type="text" class="form-control me-2" name="Name" placeholder="Name" required>
+                                            <input type="email" class="form-control ms-2" name="Email" placeholder="Email" required>
+                                        </div>
+                                        <div class="ds_middleForm mb-4">
+                                            <input type="text" class="form-control" name="Subject" placeholder="Subject" required>
+                                        </div>
+                                        <div class="ds_middleForm mb-4">
+                                            <textarea class="form-control" name="Message" placeholder="Message" rows="5" required="" spellcheck="false"></textarea>
+                                        </div>
+                                        <div class="ds_buttonForm text-start">
+                                            <button class="btn" type="submit">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="ds_contactInfo text-start">
+                                <div class="ds_contactTitle text-start text-white mb-3">
+                                    <h4>Contact Info</h4>
+                                </div>
+                                <div class="ds_description pb-4">
+                                    <span>Always available for work if the right project comes along, Feel free to
+                                        contact me!</span>
+                                </div>
+                                <div class="ds_listInfo mb-3">
+                                    <div class="ds_listInfoItems">
+                                        <div class="ds_listInfoItem d-flex flex-row">
+                                            <div class="ds_listInfoIcon">
+                                                <span>
+                                                    <i class="fa-solid fa-signature"></i>
+                                                </span>
+                                            </div>
+                                            <div class="ds_listInfoTitle ps-3 pb-3">
+                                                <div class="title">
+                                                    Name
+                                                </div>
+                                                <div class="subTitle">
+                                                    Dilawar Singh
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ds_listInfoItem d-flex flex-row">
+                                            <div class="ds_listInfoIcon">
+                                                <span>
+                                                    <i class="fa-solid fa-map-location-dot"></i>
+                                                </span>
+                                            </div>
+                                            <div class="ds_listInfoTitle ps-3 pb-3">
+                                                <div class="title">
+                                                    Location
+                                                </div>
+                                                <div class="subTitle">
+                                                    Dharamkot, Punjab - 142042, India
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ds_listInfoItem d-flex flex-row">
+                                            <div class="ds_listInfoIcon">
+                                                <span>
+                                                    <i class="fa-solid fa-phone"></i>
+                                                </span>
+                                            </div>
+                                            <div class="ds_listInfoTitle ps-3 pb-3">
+                                                <div class="title">
+                                                    Call Me
+                                                </div>
+                                                <div class="subTitle">
+                                                    <a href="tel:+919855672484">+91 98556 72484</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ds_listInfoItem d-flex flex-row">
+                                            <div class="ds_listInfoIcon">
+                                                <span>
+                                                    <i class="fa-solid fa-paper-plane"></i>
+                                                </span>
+                                            </div>
+                                            <div class="ds_listInfoTitle ps-3">
+                                                <div class="title">
+                                                    Email Me
+                                                </div>
+                                                <div class="subTitle">
+                                                    <a href="mailto:sdilawarsingh045@gmail.com">sdilawarsingh045@gmail.com</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ds_extra"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume modal -->
+    <div class="modal fade" id="resumePage" tabindex="-1" aria-labelledby="resumePageLabel" style="display: none;" aria-hidden="true">
+        <!-- <div class="modal fade show" id="resumePage" tabindex="-1" aria-labelledby="resumePageLabel" style="display: block;"
+        aria-modal="true" role="dialog"> -->
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-black text-white">
+                <div class="modal-header border-0 align-self-end">
+                    <i class="fa-solid fa-xmark ds_btnClose" data-bs-dismiss="modal" aria-label="Close"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="ds_aboutHeader text-center">
+                        <div class="ds_top">
+                            <span>Check out my Resume</span>
+                        </div>
+                        <div class="ds_middle">
+                            <span>Resume</span>
+                        </div>
+                        <div class="ds_bottom">
+                            <div class="ds_animatedBar"></div>
+                        </div>
+                    </div>
+                    <div class="ds_resumeMain mt-5 pt-5 mb-5">
+                        <div class="d-flex flex-row">
+                            <div class="ds_extra"></div>
+                            <div class="ds_resumeSubMain">
+                                <div class="ds_resumeRes text-center">
+                                    <h2>Resume Panding</h2>
+                                </div>
+                                <div class="ds_resumeSkill mt-5 pt-5">
+                                    <div class="ds_resume_skillHeader">
+                                        <div class="ds_top">
+                                            <span>My level of knowledge in some tools</span>
+                                        </div>
+                                        <div class="ds_middle">
+                                            <span>My Skills</span>
+                                        </div>
+                                    </div>
+                                    <div class="ds_resumeSkillMain">
+                                        <div class="ds_resumeSkillItems d-flex">
+                                            <div class="ds_resumeSkillItem">
+                                                <div class="title mb-2">
+                                                    <span>HTML/CSS</span>
+                                                </div>
+                                                <div class="progbar mb-5">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 92%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ds_resumeSkillItem">
+                                                <div class="title mb-2">
+                                                    <span>PHP</span>
+                                                </div>
+                                                <div class="progbar mb-5">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 82%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ds_resumeSkillItems d-flex">
+                                            <div class="ds_resumeSkillItem">
+                                                <div class="title mb-2">
+                                                    <span>JavaScript</span>
+                                                </div>
+                                                <div class="progbar mb-5">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ds_resumeSkillItem">
+                                                <div class="title mb-2">
+                                                    <span>JQuery</span>
+                                                </div>
+                                                <div class="progbar mb-5">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ds_resumeSkillItems d-flex">
+                                            <div class="ds_resumeSkillItem">
+                                                <div class="title mb-2">
+                                                    <span>React JS</span>
+                                                </div>
+                                                <div class="progbar mb-5">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ds_resumeSkillItem">
+                                                <div class="title mb-2">
+                                                    <span>Electron JS</span>
+                                                </div>
+                                                <div class="progbar mb-5">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 65%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ds_resumeSkillItems d-flex">
+                                            <div class="ds_resumeSkillItem">
+                                                <div class="title mb-2">
+                                                    <span>Web Design</span>
+                                                </div>
+                                                <div class="progbar mb-5">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 93%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ds_resumeSkillItem">
+                                                <div class="title mb-2">
+                                                    <span>Flutter</span>
+                                                </div>
+                                                <div class="progbar mb-0">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ds_extra"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var typing = new Typed(".text", {
+            strings: ["Developer", "Web Developer", "Android Developer", "Front-End Developer", "Back-End Developer"],
+            typeSpeed: 60,
+            backDelay: 1000,
+            backSpeed: 40,
+            loop: true,
+        });
+
+        $('.portfolio').click(function(e) {
+            e.preventDefault();
+            alert('Under Working');
+        });
+
+
+        // !function (e) {
+        //     "use strict"; e((function () {
+        //         var t, i, a = 2500, n = 660, o = 1500;
+        //         function s(e) {
+        //             var t = function (e) {
+        //                 return e.is(":last-child") ? e.parent().children().eq(0) : e.next()
+        //             }(e); e.parents(".cd-headline").hasClass("clip") && e.parents(".cd-words-wrapper").animate({ width: "2px" }, n, (
+        //                 function () {
+        //                     var i; i = t, e.removeClass("is-visible").addClass("is-hidden"),
+        //                         i.removeClass("is-hidden").addClass("is-visible"),
+        //                         function (e, t) {
+        //                             e.parents(".cd-headline").hasClass("clip") && e.parents(".cd-words-wrapper").animate({ width: e.width() + 10 }, n, (
+        //                                 function () {
+        //                                     setTimeout((
+        //                                         function () {
+        //                                             s(e)
+        //                                         }), o)
+        //                                 }))
+        //                         }(t)
+        //                 }))
+        //         } t = e(".cd-headline"),
+        //             i = a, t.each((
+        //                 function () {
+        //                     var t = e(this);
+        //                     if (t.hasClass("clip")) {
+        //                         var a = t.find(".cd-words-wrapper"),
+        //                             n = a.width() + 10;
+        //                         a.css("width", n)
+        //                     }
+        //                     setTimeout((
+        //                         function () {
+        //                             s(t.find(".is-visible").eq(0))
+        //                         }), i)
+        //                 }))
+        //     }))
+        // }(jQuery);
+    </script>
+
+</body>
+
+</html>
