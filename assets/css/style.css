@@ -1,0 +1,558 @@
+:root {
+    --transparent: transparent;
+    --black: #000000;
+    --white: #ffffff;
+    --green: #4acd22;
+    --skypeOne: #88d9f8;
+    --skypeTwo: #00aff0;
+    --instagramOne: #fdf497;
+    --instagramTwo: #fd5949;
+    --instagramThree: #d6249f;
+    --instagramFour: #285AEB;
+    --whatsapp: #25d366;
+    --snapchat: #fffc00;
+    --mainBG: #1a1a1a;
+    --mainBackground: url('./back.png');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-image: var(--mainBackground); */
+    background-color: var(--black);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.ds_mouse {
+    cursor: pointer;
+}
+
+.ds_navbarItem {
+    padding: 0.8rem;
+    font-weight: 500;
+}
+
+.ds_navbarItem span {
+    color: var(--white);
+}
+
+.ds_navbarItem span:hover {
+    color: var(--green);
+}
+
+.ds_navbarItemActive span {
+    color: var(--green);
+    /* background: radial-gradient(circle at 10% 20%, rgb(161, 255, 206) 0%, rgb(250, 255, 209) 90%); */
+}
+
+.ds_textArea {
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+.ds_name {
+    font-family: Poppins, sans-serif;
+    font-size: 2.6rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: var(--white);
+    background: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ds_headline {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.04rem;
+    color: var(--white);
+    background: radial-gradient(circle at 10% 20%, rgb(161, 255, 206) 0%, rgb(250, 255, 209) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ds_iconItems {
+    flex-direction: row;
+}
+
+.ds_aboutSMain,
+.ds_singleInfo,
+.ds_resumeSkillItems,
+.ds_aboutSMain {
+    flex-direction: column;
+}
+
+.ds_iconSection {
+    transform: translate(-50%);
+    left: 50%;
+    bottom: 1rem;
+}
+
+.ds_iconItem .ds_githup,
+.ds_iconItem .ds_skype,
+.ds_iconItem .ds_instagram,
+.ds_iconItem .ds_whatsapp,
+.ds_iconItem .ds_snapchat {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.ds_iconItem .ds_githup:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.ds_iconItem .ds_skype:hover {
+    color: var(--white);
+    background: linear-gradient(var(--skypeOne), var(--skypeTwo));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ds_iconItem .ds_instagram:hover {
+    color: var(--white);
+    background: radial-gradient(circle at 30% 107%, var(--instagramOne) 0%, var(--instagramOne) 5%, var(--instagramTwo) 45%, var(--instagramThree) 60%, var(--instagramFour) 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ds_iconItem .ds_whatsapp:hover i {
+    color: var(--white);
+    background:
+        linear-gradient(var(--whatsapp), var(--whatsapp)) 14% 84%/16% 16% no-repeat,
+        radial-gradient(var(--whatsapp) 60%, transparent 0);
+}
+
+.ds_iconItem .ds_snapchat:hover {
+    color: var(--snapchat);
+}
+
+.ds_btnClose {
+    opacity: 1;
+    box-sizing: content-box;
+    font-size: 1.7rem;
+    border: 0;
+    border-radius: 0.375rem;
+}
+
+.ds_top {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #9f9f9f;
+}
+
+.ds_middle {
+    font-size: 2.9rem;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+}
+
+.ds_aboutMain .ds_image {
+    width: 12rem;
+    height: 12rem;
+    /* height: 32.5rem; */
+    border-radius: 50%;
+    background: var(--black);
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--black);
+    text-align: center;
+    line-height: 6rem;
+    margin-bottom: 2.2rem;
+
+}
+
+.ds_animatedBar {
+    background-color: var(--green);
+    content: '';
+    height: 4px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    width: 80px;
+}
+
+.ds_animatedBar:after,
+.ds_animatedBar:before {
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: barAnimation;
+    -webkit-animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: barAnimation;
+    animation-timing-function: linear;
+    background-color: #101010;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 4px
+}
+
+.ds_animatedBar:before {
+    left: 8px
+}
+
+.ds_animatedBar:after {
+    left: 0
+}
+
+@-webkit-keyframes barAnimation {
+    from {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    to {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px)
+    }
+}
+
+@keyframes barAnimation {
+    from {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    to {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px)
+    }
+}
+
+.ds_aboutText,
+.ds_extra {
+    flex: 1 0;
+}
+
+.ds_image {
+    flex: auto;
+}
+
+.ds_aboutText {
+    flex: 7 0;
+}
+
+
+.ds_aboutMain .ds_subImage {
+    background-size: 13rem;
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-color: var(--black);
+    flex: 1 0;
+    border-radius: 50%;
+}
+
+.ds_aboutText .ds_subText {
+    color: var(--green);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.ds_aboutText .ds_text {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.ds_aboutText .ds_description {
+    color: #9f9f9f;
+    border-bottom: 1px solid #363636;
+}
+
+.ds_infoName,
+.ds_infoEmail,
+.ds_infoAge,
+.ds_infoFrom {
+    flex: 1 0;
+}
+
+.ds_infoEmail a,
+.ds_infoAge a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+.ds_infoName span:nth-child(2),
+.ds_infoAge span:nth-child(2),
+.ds_infoFrom span:nth-child(2) {
+    color: #9f9f9f;
+}
+
+.ds_infoEmail a:hover,
+.ds_infoAge a:hover {
+    color: var(--green);
+    opacity: 0.5;
+}
+
+.ds_otherItems {
+    align-items: start;
+    flex-direction: column;
+}
+
+.ds_cv a {
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.6rem 2.1rem;
+}
+
+.btn:hover {
+    opacity: 0.5;
+    color: var(--white);
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+.ds_otherLine span {
+    align-items: center;
+    display: inline-block;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 100%;
+    margin-bottom: 0;
+}
+
+.ds_otherLine span:before {
+    background-color: rgba(255, 255, 255, .25);
+    content: '';
+    height: 2px;
+    margin-right: 23px;
+    width: 60px;
+}
+
+.ds_contactForm form {
+    width: 100%;
+}
+
+.form-control:focus {
+    color: #777;
+    background-color: #161616;
+    border-color: var(--transparent);
+    border-bottom: 1px solid var(--green);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--transparent);
+}
+
+.ds_contactInfo {
+    flex: 5 0;
+}
+
+.ds_contactForm {
+    flex: 7 0;
+}
+
+.form-control {
+    background-color: #161616;
+    border: none;
+    border-bottom: 1px solid #1d1d1d;
+    border-radius: 0;
+    font-size: 15px;
+    height: 44px;
+    padding: 9px 14px;
+    color: #777;
+}
+
+.ds_middleForm .form-control {
+    height: auto;
+}
+
+.ds_buttonForm button {
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.6rem 2.1rem;
+}
+
+.ds_contactInfo {
+    color: #9f9f9f;
+}
+
+.ds_listInfoTitle {
+    border-left: 1px solid #ffffff;
+}
+
+.ds_listInfoIcon {
+    width: 3.3rem;
+}
+
+.ds_listInfoIcon span {
+    font-size: 1.7rem;
+    color: var(--green);
+}
+
+.ds_listInfoTitle .title {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.ds_listInfoTitle .subTitle {
+    font-size: 0.91rem;
+}
+
+.ds_listInfoTitle .subTitle a {
+    color: #9f9f9f;
+    text-decoration: none;
+}
+
+.ds_listInfoTitle .subTitle a:hover {
+    opacity: 0.5;
+}
+
+.is-hidden {
+    /* opacity: 0; */
+    display: none;
+}
+
+.home-area .home-headline .single-headline {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+}
+
+.home-area .home-headline .single-headline b {
+    display: inline-block;
+    font-weight: 400;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+}
+
+.home-area .home-headline .single-headline b.is-visible {
+    opacity: 1;
+    position: relative;
+}
+
+
+.ds_resumeSubMain {
+    flex: 15 0;
+}
+
+.ds_resume_skillHeader .ds_top {
+    margin: 0;
+}
+
+.ds_resume_skillHeader .ds_middle {
+    font-size: 2.5rem;
+}
+
+.ds_resumeSkillItem {
+    flex: 1 0;
+}
+
+.progbar .progress {
+    border-radius: 0.15rem;
+    height: 0.6rem;
+    background-color: #2f2f2f;
+}
+
+.progress-bar {
+    background-color: var(--green);
+    opacity: 0.8;
+}
+
+
+
+
+
+
+@media screen and (min-width: 769px) {
+    .ds_name {
+        font-size: 4.2rem;
+        font-weight: 700;
+    }
+
+    .ds_headline {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .ds_iconItems {
+        flex-direction: column;
+    }
+
+    .ds_aboutSMain,
+    .ds_singleInfo,
+    .ds_resumeSkillItems,
+    .ds_aboutSMain {
+        flex-direction: row;
+    }
+
+    .ds_iconSection {
+        transform: none;
+        left: auto;
+        right: 2rem;
+    }
+
+    .ds_navbarItem {
+        padding: 1.2rem;
+    }
+
+    .ds_image {
+        flex: 5 0;
+    }
+
+
+    .ds_aboutMain .ds_image {
+        width: 27rem;
+        height: 27.6rem;
+        /* height: 32.5rem; */
+        border-radius: 50%;
+        background: var(--black);
+        font-size: 2rem;
+        font-weight: 500;
+        color: var(--black);
+        text-align: center;
+        line-height: 6rem;
+        margin-bottom: 0rem;
+
+    }
+
+    .ds_aboutMain .ds_subImage {
+        background-size: 27rem 32.5rem;
+        /* background-position: center center; */
+        background-repeat: no-repeat;
+        background-color: var(--black);
+        flex: 1 0;
+        border-radius: 0;
+    }
+
+    .ds_aboutText .ds_text {
+        font-size: 31px;
+    }
+
+    .ds_otherItems {
+        align-items: baseline;
+        flex-direction: row;
+    }
+
+    .ds_resumeSkillItems {
+        gap: 3rem;
+    }
+
+    .ds_contactForm form {
+        width: 90%;
+    }
+
+    .ds_listInfoIcon {
+        width: 3.5rem;
+    }
+
+}
